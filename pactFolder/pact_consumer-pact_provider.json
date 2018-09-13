@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "pact-specification": {"version": "3.0.0"},
+    "pact-jvm": {"version": "3.5.18"}
+  },
+  "provider": {"name": "pact_provider"},
+  "consumer": {"name": "pact_consumer"},
+  "interactions": [{
+    "request": {
+      "path": "/name1/",
+      "headers": {"xpath": "/TCRMService[1]/TxResponse[1]/ResponseObject[1]/TCRMPersonBObj[1]/TCRMAdminContEquivBObj[1]/AdminPartyId[1]/text()[1]\": \"123459\""},
+      "method": "GET",
+      "query": {"id": ["1"]}
+    },
+    "response": {
+      "headers": {"Content-Type": "application/xml; charset=ISO-8859-1"},
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<pactModel>\r\n    <id>1<\/id>\r\n    <name>DummyName<\/name>\r\n<\/pactModel>",
+      "status": 200
+    },
+    "description": "Get call from pact service Consumer"
+  }]
+}
