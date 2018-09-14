@@ -2,14 +2,9 @@
 **This projects helps to download pacts from pact broker in Scala. **
 
 ## Getting Started:
-```
- Clone project from GitHub (https://github.com/kanwaldeepBhangu/pact-scala-enhancement)  
- Run maven command to build the project (Example mvn install -Dmaven.test.skip=true)
- Add the enhancement-0.0.1-SNAPSHOT.jar file into your project as Dependency
- ```
 
 ## Prerequisites:
-**To work with this project ,you need to set four System variables**
+**To work with this project ,you need to set four System Properties**
 ```
 PACT_BROKER_USERNAME="YourUserName"
 PACT_BROKER_PASSWORD="YourPassword"
